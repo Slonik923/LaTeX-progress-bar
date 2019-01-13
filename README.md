@@ -48,3 +48,5 @@ make progress
 	./progress test*.tex 45 80
 	```
 	Will find all .tex files with prefix 'test' in current directory and your goal is 45 pages.
+- Decimal numbers
+- Arguments validation
