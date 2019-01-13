@@ -2,7 +2,17 @@
 Progress bar for documents in Latex
 
 ## Getting Started
-For now works only on Linux.
+Tested only on Linux.
+
+## Installing 
+### Linux
+1. Copy the script to directory with your `.tex` files, or add it to your PATH variable.
+2. Make script executable(`chmod +x progress`)
+
+### Windows 
+Never tried, but in theory should work. You can try [this tutorial](https://www.howtogeek.com/261591/how-to-create-and-run-bash-shell-scripts-on-windows-10/).
+
+Planning on testing on Windows.
 
 ## Running the script
 Running script with no arguments gives you this:
