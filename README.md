@@ -26,3 +26,7 @@ You can add it to your Makefile like this:
    progress:                                                                       
       @progress "prefix-of-your-tex-files-*.tex" goal 80                              
 ```
+Then add progress to your default Makefile target, or run:
+```
+make progress
+```
