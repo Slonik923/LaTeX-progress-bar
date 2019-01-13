@@ -1,6 +1,12 @@
 # LaTeX-progress-bar
 Progress bar for documents in Latex
 
+## WORK IN PROGRESS
+For now it works only on Linux and only if you give use it like this:
+```
+progress 40 80 80
+```
+
 ## Getting Started
 Tested only on Linux.
 
@@ -24,12 +30,6 @@ usage: progress current goal [len]
 	optional:
 	len: 	progress bar length (default=80)
 ```
-So for example:
-```
-./progress test*.tex 45 80
-```
-Will find all .tex files with prefix 'test' in current directory and your goal is 45 pages.
-
 
 You can add it to your Makefile like this:
 ```
@@ -40,3 +40,11 @@ Then add progress to your default Makefile target, or run:
 ```
 make progress
 ```
+
+### TODO:
+- Make progress find `.tex` files and count words. To work it this way:
+	So for example:
+	```
+	./progress test*.tex 45 80
+	```
+	Will find all .tex files with prefix 'test' in current directory and your goal is 45 pages.
