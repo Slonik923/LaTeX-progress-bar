@@ -4,11 +4,13 @@ Progress bar for documents in Latex
 ## WORK IN PROGRESS
 For now it works only on Linux and only if you give use it like this:
 ```
-progress 40 80 80
+progress project-*.tex 25
 ```
 
 ## Getting Started
-Tested only on Linux.
+ - Tested only on Linux.
+ - One page equal `1800` characters
+ - Uses detex to get only text characters count
 
 ## Installing 
 ### Linux
@@ -24,11 +26,11 @@ Planning on testing on Windows.
 Running script with no arguments gives you this:
 
 ```
-usage: progress current goal [len]
-	current: 	current value
-	goal: 	pages goal
+usage: progress tex_file goal [len]
+	tex_file: 	filename of your tex file
+	goal: 		pages goal
 	optional:
-	len: 	progress bar length (default=80)
+	len: 		progress bar length (default=80)
 ```
 
 You can add it to your Makefile like this:
@@ -42,11 +44,5 @@ make progress
 ```
 
 ### TODO:
-- Make progress find `.tex` files and count words. To work it this way:
-	So for example:
-	```
-	./progress test*.tex 45 80
-	```
-	Will find all .tex files with prefix 'test' in current directory and your goal is 45 pages.
 - Decimal numbers
 - Arguments validation
